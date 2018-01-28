@@ -631,12 +631,6 @@ export default class PluginToolbar extends Component {
             title: button.title ? button.title : '',
             className: button.class,
             style: { width: '100%' },
-            onBlur: e => {
-                let value = e.target.value;
-                if (button.type === 'number' && value === "") {
-                    value = button.min ? button.min : 0;
-                }
-            },
             onChange: e => {
                 let value;
                 if (typeof e.target !== 'undefined') {
