@@ -75,7 +75,7 @@ export function BasicAudio(base) {
         getRenderTemplate: function(state) {
             return (
                 <div style={{ height: '100%', width: '100%' }} className='dropableRichZone'>
-                    <audio className='basicAudioClass'
+                    <audio className='basicAudioClass unclickableControls'
                         src={ state.url }
                         autoPlay={ state.autoplay }
                         controls={ state.controls }
