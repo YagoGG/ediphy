@@ -636,10 +636,6 @@ export default class PluginToolbar extends Component {
                 if (button.type === 'number' && value === "") {
                     value = button.min ? button.min : 0;
                 }
-
-                if (!button.autoManaged && button.callback) {
-                    button.callback(state, buttonKey, value, id, UPDATE_TOOLBAR);
-                }
             },
             onChange: e => {
                 let value;
